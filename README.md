@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+##This is bootstraped with CRA (Create React App)
+## The Tech Stacks used are
+- ##ReactJs
+    ReactJs is the Best choice when it comes to Web Apps
+    React being the SPA (Single Page Application) provides the best functionalities to make a modular and Scalable Structure
+    
+- ##Tailwind CSS
+    Tailwind the the best Css library
+    Tailwind provides all the styling tools required with all the styles being making the UI Responsive
+  
+- ##Redux
+    Redux is chosen to make app scalabel
+    As Redux is the Best choice as an Global State managment tool
+  
+- ##Redux Thunk
+    Redux Thunk is an middleware, which combines multiple reducers, which allows us to write as many Reducers as needed while scaling
+  
+- ##Axios
+   Axios is chosen to make HTTP requests POST, GET,  DELETE, PUT, PATCH
+    It is one on the best methods to choose when compared to fetch method to fetch apis
+  
+- ##React-Router-Dom
+   React Router Dom is the library used to navigate between the pages making Routing very simple and easy to use, and the best way to achieve Single page application
+  
+- ##Figma
+    Figma provided was the best Figma as it had all the syling and parameters that are to be used which helped me to achieve this task in a pixel perfect manner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##To run this file locally
+- clone the repo - git clone https://github.com/UmeshGolani/ReachInBox.git
+- open it in your choice of ide - VSCode(Recommended)
+- Inside the folder - open terminal
+- run the command - npm i, npm start -> to start the app
