@@ -25,6 +25,9 @@
 - ##Figma
     Figma provided was the best Figma as it had all the syling and parameters that are to be used which helped me to achieve this task in a pixel perfect manner
 
+  ## Here is the short video on my project
+  https://www.loom.com/share/67ed295bde534bb89c8a565d2b83e73e
+
 ##To run this file locally
 - clone the repo - git clone https://github.com/UmeshGolani/ReachInBox.git
 - open it in your choice of ide - VSCode(Recommended)
