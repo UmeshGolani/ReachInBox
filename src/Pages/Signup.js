@@ -1,17 +1,19 @@
 import React from "react";
-import OAuth from "../Components/GoogleLogin";
+import GoogleLogin from "../Components/GoogleLogin";
+import Clogo from '../Assets/Clogo.svg'
 
 const SignUp = () => {
   return (
     <div className="bg-[#25262b] h-[100vh] flex flex-col">
+      
       <div className="w-full h-16 flex justify-center items-center border-b border-gray-700">
-        <img src="../src/assets/Logo.png" alt=""/>
+        <img src={Clogo} alt=""/>
       </div>
       <div className="flex justify-center items-center flex-grow">
-        <OAuth/>
+        <GoogleLogin/>
       </div>
       <div className="w-full h-8 flex justify-center items-center border-t border-gray-700 bg-[#25262b]">
-        <p className="text-gray-600">&copy; 2023 Reachinbox, All rights reserved</p>
+        <p className="text-gray-600 font-sans">&copy; 2023 Reachinbox, All rights reserved</p>
       </div>
     </div>
   );

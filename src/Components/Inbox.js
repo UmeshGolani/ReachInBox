@@ -18,7 +18,7 @@ const Inbox = () => {
 
   useEffect(() => {
     dispatch(getEmailList(config));
-  }, []);
+  });
 
   const handleSingleThread = (threadId) => {
     dispatch(updateCurThread(threadId));
@@ -26,19 +26,19 @@ const Inbox = () => {
   };
 
   const theme = useSelector((store) => store.theme);
-  const bgColor = theme == "dark" ? "bg-gray-800" : "bg-[#DFE3E8]";
-  const textColor = theme == "dark" ? "text-white" : "text-black";
-  const borderClr = theme == "dark" ? "border-gray-700" : "border-white"
+  const bgColor = theme === "dark" ? "bg-gray-800" : "bg-[#DFE3E8]";
+  const textColor = theme === "dark" ? "text-white" : "text-black";
+  const borderClr = theme === "dark" ? "border-gray-700" : "border-white"
 
   const totalMail = allMailList.length;
   return (
     <>
       <div className="pt-10 pb-5 ml-3">
-        <h1 className="text-blue-500 text-xl font-bold flex items-center">
+        <h1 className="text-blue-500 text-xl font-bold flex items-center font-sans">
           All Inbox(s)
           <RiArrowDropDownLine />
         </h1>
-        <p className="text-gray-500">
+        <p className="text-gray-500 font-sans">
           <span className={`font-bold ${textColor} text-sm mr-1`}>
             {totalMail}/{totalMail}
           </span>
@@ -61,10 +61,10 @@ const Inbox = () => {
           >
             {totalMail}
           </span>
-          <span className="text-lg">New Replies</span>
+          <span className="text-lg font-sans">New Replies</span>
         </div>
         <div className="flex justify-center items-center">
-          <span className="mr-1 text-lg">Newest</span>
+          <span className="mr-1 text-lg font-sans">Newest</span>
           <RiArrowDropDownLine />
         </div>
       </div>

@@ -14,7 +14,7 @@ export const resetData =(config)=> ()=>{
   })
   .catch(err => {
     console.log(err)
-    alert("Something went wrong! Unable to reset data")
+    
   });
 }
 

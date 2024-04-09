@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Sidebar from "../Components/SideBar";
 import Header from "../Components/Header";
 import AllInbox from "../Components/Inbox";

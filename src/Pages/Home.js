@@ -3,10 +3,9 @@ import Sidebar from "../Components/SideBar";
 import Header from "../Components/Header";
 import mailImg from "../Assets/mail.png"
 import mailImgWhite  from "../Assets/mailWhite.png"
-import { useParams } from "react-router-dom";
 import { getEmailList, resetData, updateToken } from "../Redux/Action";
 import { useDispatch, useSelector } from "react-redux";
-import store from "../Redux/store";
+
 const Home = () => {
   const dispatch = useDispatch()
   const allMailList = useSelector((store)=> store.listmail)
@@ -36,7 +35,7 @@ const Home = () => {
     }  
     dispatch(updateToken(tokenParam))
     dispatch(getEmailList(config))
-  },[])
+  });
 
   const theme = useSelector((store)=> store.theme)
   const bgColor = theme === "dark" ? "bg-black" : "bg-[#FFFFFF]"
@@ -49,10 +48,10 @@ const Home = () => {
         <Header />
         <div className={`${bgColor} h-full w-full flex flex-col items-center ${textColor} -mt-16 pt-36`}>
   <img src={(theme === "dark" ? mailImg : mailImgWhite)} alt="mailimg" className="max-w-full max-h-full" style={{width: "280px", height:"229px"}} />
-  <h1 className="font-bold text-xl">It's the beginning of a legendary sales pipeline</h1>
+  <h1 className="font-bold text-xl font-sans">It's the beginning of a legendary sales pipeline</h1>
   <br />
-  <p>When you have inbound E-mails</p>
-  <p>You'll see them here</p>
+  <p className="font-sans">When you have inbound E-mails</p>
+  <p className="font-sans">You'll see them here</p>
 </div>
       </div>
     </div>

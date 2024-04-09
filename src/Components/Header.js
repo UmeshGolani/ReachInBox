@@ -1,7 +1,6 @@
 import React from 'react'
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { useDispatch, useSelector } from 'react-redux';
-import store from '../Redux/store';
 import { FiMoon } from "react-icons/fi";
 import { BsCircleFill } from "react-icons/bs";
 import { switchTheme } from '../Redux/Action';
@@ -11,24 +10,24 @@ const Header = () => {
   const dispatch = useDispatch()
   const theme = useSelector((store)=> store.theme)
   const handleTheme = ()=>{
-    if(theme == "dark"){
+    if(theme === "dark"){
       dispatch(switchTheme("light"))
     }else{
       dispatch(switchTheme("dark"))
     }
   }
-  const textColor = theme == "dark" ? "text-white" : "text-[#5B5F66]"
-  const bgColor = theme == "dark" ? "bg-[#1F1F1F]" : "bg-white"
-  const borderClr = theme == "dark" ? "border-gray-700" : "border-[#DEDEDE]"
-  const btnBgClr = theme == "dark" ? "bg-gray-800" : "bg-[#DADEE1]"
+  const textColor = theme === "dark" ? "text-white" : "text-[#5B5F66]"
+  const bgColor = theme === "dark" ? "bg-[#1F1F1F]" : "bg-white"
+  const borderClr = theme === "dark" ? "border-gray-700" : "border-[#DEDEDE]"
+  const btnBgClr = theme === "dark" ? "bg-gray-800" : "bg-[#DADEE1]"
   //console.log(theme, bgColor, textColor)
   return (
     <div className={`flex justify-between items-center h-16 w-full ${bgColor} ${textColor} 
     border-b ${borderClr}`}>
-        <h1 className='ml-5 font-bold text-l'>Onebox</h1>
+        <h1 className='ml-5 font-bold text-l text-white font-sans'>Onebox</h1>
         <div className='flex items-center justify-center'>
         <button className={`mr-6 flex items-center justify-between ${btnBgClr} border ${borderClr} rounded-full p-1`} onClick={handleTheme}>
-      {(theme == "dark") ? (
+      {(theme === "dark") ? (
         <>
         <>
         <BsCircleFill className="w-4 h-4 text-white-300 mr-1" />
@@ -44,7 +43,7 @@ const Header = () => {
     </button>
             
             <div className='flex justify-center items-center mr-5' >
-            <p>Tim's Workspace</p>
+            <p className='font-sans'>Tim's Workspace</p>
             <RiArrowDropDownLine size={25}/>
             </div>
         </div>

@@ -12,9 +12,9 @@ const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
 const formattedDate = monthNames[date.getUTCMonth()] + ' ' + date.getUTCDate();
 
   const theme = useSelector((store)=> store.theme)
-  const bgColor = theme == "dark" ? "bg-gray-800" : "bg-[#DFE3E8]"
-  const borderClr = theme == "dark" ? "border-gray-700" : "border-white"
-  const textColor = theme == "dark" ? "text-white" : "text-[#343A40]"
+  const bgColor = theme === "dark" ? "bg-gray-800" : "bg-[#DFE3E8]"
+  const borderClr = theme === "dark" ? "border-gray-700" : "border-white"
+  const textColor = theme === "dark" ? "text-white" : "text-[#343A40]"
 
   const handleCurThread = ()=>{
     handleSingleThread(threadId)
@@ -29,10 +29,10 @@ const formattedDate = monthNames[date.getUTCMonth()] + ' ' + date.getUTCDate();
       <p className='text-sm'>{subject}.</p>
       <div className='flex items-center mt-4'>
         <button className={`flex justify-center items-center ${bgColor} py-1 px-4 rounded-2xl mr-4 lin`}>
-          <GoDotFill/><span className='ml-1 text-xs'>Interested</span>
+          <GoDotFill/><span className='ml-1 text-xs font-sans'>Interested</span>
         </button>
         <button className={`flex justify-center items-center ${bgColor} py-1 px-2 rounded-2xl`}>
-          <IoIosSend/><span className='ml-1 text-xs' style={{whiteSpace:'nowrap'}}>Campaign Name</span>
+          <IoIosSend/><span className='ml-1 text-xs font-sans' style={{whiteSpace:'nowrap'}}>Campaign Name</span>
         </button>
       </div>
     </div>
